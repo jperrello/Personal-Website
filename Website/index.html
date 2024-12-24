@@ -8,24 +8,28 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="bg-blue-600 text-white py-6">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Joey Perrello</h1>
-      <nav>
-        <a href="#about" class="mx-2 hover:underline">About</a>
-        <a href="#portfolio" class="mx-2 hover:underline">Portfolio</a>
-        <a href="#contact" class="mx-2 hover:underline">Contact</a>
-      </nav>
-    </div>
-  </header>
-
   <main class="container mx-auto my-10">
     <!-- Hero Section -->
-    <section>
-      <img src="assets/grad_photo.jpg" alt="Your Professional Photo" class="mx-auto rounded-full w-40 h-40">
-      <h2 class="text-4xl text-center font-bold my-4">Hello!</h2>
-      <h2 class="text-4xl text-center font-bold my-4">Welcome to my Personal Website</h2>
-      <p class="text-lg">I am a Passionate and motivated computer science student with peer tutoring and research experience, currently working as a teaching assistant role, fostering a supportive learning environment for undergraduates at UC Santa Cruz.</p>
+    <section class="hero-section">
+      <!-- Left Text Boxes -->
+      <div class="text-boxes">
+        <div class="p-6">
+          <h2 class="text-3xl font-bold text-center">Hello!</h2>
+        </div>
+        <div class="p-6">
+          <h2 class="text-3xl font-bold">Welcome to My Personal Website</h2>
+        </div>
+        <div class="p-6">
+          <p class="text-lg">
+            I am a passionate and motivated computer science student with peer tutoring
+            and research experience, currently working as a teaching assistant at UC Santa Cruz.
+          </p>
+        </div>
+      </div>
+      <!-- Right Image -->
+      <div class="hero-image">
+        <img src="assets/grad_photo.jpg" alt="Your Professional Photo">
+      </div>
     </section>
 
     <!-- About Section -->
@@ -87,7 +91,7 @@
     </section>
   </main>
 
-  <footer class="bg-gray-200 text-center py-4">
+  <footer class="bg-card-200 text-center py-4">
     <p>© Joey Perrello. All Rights Reserved.</p>
   </footer>
 </body>
