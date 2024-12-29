@@ -6,6 +6,7 @@
   <title>Joey Perrello - Personal Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
   <main class="container mx-auto my-10">
@@ -14,14 +15,14 @@
       <!-- Left Text Boxes -->
       <div class="text-boxes">
         <div class="p-6">
-          <h2 class="text-3xl font-bold text-center">Hello!</h2>
+          <h2 class="section-title text-3xl">Hello!</h2>
         </div>
         <div class="p-6">
-          <h2 class="text-3xl font-bold">Welcome to My Personal Website</h2>
+          <h2 class="section-title text-3xl">Welcome to My Personal Website</h2>
         </div>
         <div class="p-6">
-          <p class="text-lg">
-            I am a passionate and motivated computer science student with peer tutoring
+          <p class="text-lg text-center">
+            My name is Joey Perrello and I am a passionate and motivated computer science student with peer tutoring
             and research experience, currently working as a teaching assistant at UC Santa Cruz.
           </p>
         </div>
@@ -34,7 +35,7 @@
 
     <!-- About Section -->
     <section id="about" class="my-10">
-      <h2 class="text-2xl text-center font-bold mb-4">About Me</h2>
+      <h2 class="section-title text-3xl">About Me</h2>
       
       <p class="text-lg">I have always been eager to step out of the comfort zone that the Central Valley has provided me. The question of what more could be waiting for me in the outside world was answered in the summer of 2023 when I applied and was granted the opportunity to work for a small startup in London named Filisia. Nervous and eager to learn, I stepped on the plane to travel to a foreign land to see what awaited me. </p>
       <p class="text-lg">While working at my 2023 internship at Filisia, I learned that the team was developing an app to educate academically challenged children across London. I was tasked with redesigning the team’s backend data system, which lacked the ability to adequately visualize children’s progress in response times and their academic advancement. Before this point, I had completed research in network analysis with Python on large datasets for Google’s ExploreCSR program. My work with educational software at Fisilia piqued my interest in data processing as a means to optimize core functionality of web services, such as data visualization or recommendation systems. However, working with a dedicated team of engineers forty hours a week opened my eyes to a whole new world of software engineering. By the end of my time with the Filisia team, I had created an entire interactive visualization system to help future employees and users track the progression of young children. </p>
@@ -44,41 +45,32 @@
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="my-10">
-      <h2 class="text-2xl font-bold mb-4 text-center">Portfolio</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-card p-4 shadow">
-          <h3 class="font-bold text-lg">Resume</h3>
-          <p>Here is a general copy of my resume! Feel free to view below.</p>
-          <a href="https://docs.google.com/document/d/12MC4tdCIGQRrnF2TQda-X8zY2xyh596y/edit?usp=sharing&ouid=108662796257647005613&rtpof=true&sd=true" class="text-blue-600 hover:underline">View Resume</a>
-        </div>
-        <div class="bg-card p-4 shadow">
-          <h3 class="font-bold text-lg">Moderation and Misinformation on Social Media</h3>
-          <p>Research project developed in November/December 2024. Focused on detecting unfair promotion of political ideaologies over others on Reddit, Twitter, and Threads. Also investigated effectiveness of fact-checking and how toxicity is promoted online.</p>
-          <a href="#" class="text-blue-600 hover:underline">View Project *need link</a>
-        </div>
-        <div class="bg-card p-4 shadow">
-          <h3 class="font-bold text-lg">Jake</h3>
-          <p>Class Project developed in September-December 2023. Gained experience in frontend and backend web development. Project focused on rebuilding and improving Stanislaus State's website for finding relevant academic research papers.</p>
-          <a href="https://github.com/elliott2232/CS4800-JAKE" class="text-blue-600 hover:underline">View Project</a>
-        </div>
-        <div class="bg-card p-4 shadow">
-          <h3 class="font-bold text-lg">School Counselor Chatbot</h3>
-          <p>StanHack Hackathon Project in 2024, developed in two days. AI Chatbot designed to offer advising to students signing up for classes. Gained experience in AI and 3D Modelling. </p>
-          <a href="https://github.com/ChristianAlameda/HackStan" class="text-blue-600 hover:underline">View Project</a>
-        </div>
-<!-- Add more projects as needed 
-        <div class="bg-card p-4 shadow">
-          <h3 class="font-bold text-lg">Project Title</h3>
-          <p>Brief description of the project.</p>
-          <a href="#" class="text-blue-600 hover:underline">View Project</a>
-        </div>
-        -->
+      <h2 class="section-title text-3xl">Portfolio</h2>
+      <div class="project-card">
+        <h3>Resume</h3>
+        <p>Here is a general copy of my resume! Feel free to view below.</p>
+        <a href="https://docs.google.com/document/d/12MC4tdCIGQRrnF2TQda-X8zY2xyh596y/edit?usp=sharing&ouid=108662796257647005613&rtpof=true&sd=true" class="text-blue-600 hover:underline">View Resume</a>
+      </div>
+      <div class="project-card">
+        <h3>Moderation and Misinformation on Social Media</h3>
+        <p>Research project developed in November/December 2024. Focused on detecting unfair promotion of political ideologies over others on Reddit, Twitter, and Threads. Also investigated the effectiveness of fact-checking and how toxicity is promoted online.</p>
+        <a href="#" class="text-blue-600 hover:underline">View Project *need link</a>
+      </div>
+      <div class="project-card">
+        <h3>Jake</h3>
+        <p>Class Project developed in September-December 2023. Gained experience in frontend and backend web development. Project focused on rebuilding and improving Stanislaus State's website for finding relevant academic research papers.</p>
+        <a href="https://github.com/elliott2232/CS4800-JAKE" class="text-blue-600 hover:underline">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>School Counselor Chatbot</h3>
+        <p>StanHack Hackathon Project in 2024, developed in two days. AI Chatbot designed to offer advising to students signing up for classes. Gained experience in AI and 3D Modelling.</p>
+        <a href="https://github.com/ChristianAlameda/HackStan" class="text-blue-600 hover:underline">View Project</a>
       </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="my-10">
-      <h2 class="text-2xl font-bold mb-4 text-center">Contact</h2>
+      <h2 class="section-title text-3xl">Contact</h2>
       <form class="bg-card p-4 shadow">
         <label for="name" class="block font-bold mb-2">Name</label>
         <input type="text" id="name" class="w-full p-2 border rounded mb-4" placeholder="Your Name">
