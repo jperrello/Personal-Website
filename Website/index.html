@@ -22,8 +22,7 @@
         </div>
         <div class="p-6">
           <p class="text-lg text-center">
-            My name is Joey Perrello and I am a passionate and motivated computer science student with peer tutoring
-            and research experience, currently working as a teaching assistant at UC Santa Cruz.
+            My name is Joey Perrello and I am a Master's student in Computer Science at UC Santa Cruz, focusing on censorship and cybersecurity research. I currently serve as a teaching assistant for CSE 180: Database Systems while pursuing my graduate degree.
           </p>
         </div>
       </div>
@@ -37,51 +36,76 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="my-10">
       <h2 class="section-title text-3xl">Portfolio</h2>
+      
       <div class="project-card">
         <h3>Resume</h3>
         <p>Here is a general copy of my resume! Feel free to view below.</p>
-        <a href="https://docs.google.com/document/d/12MC4tdCIGQRrnF2TQda-X8zY2xyh596y/edit?usp=sharing&ouid=108662796257647005613&rtpof=true&sd=true" target="_blank" class="text-blue-600 hover:underline">View Resume</a>
+        <a href="https://docs.google.com/document/d/1LFRu59g_5Sv_UZbjcVwY2nh2HB6MmaVK/edit?usp=sharing&ouid=108662796257647005613&rtpof=true&sd=true" target="_blank" class="text-blue-600 hover:underline">View Resume</a>
       </div>
+
       <div class="project-card">
-        <h3>Peer Tutor For Database Systems CSE180</h3>
-        <p>In this course i hade the honor of educating undergraduates in SQL fundamentals, including hands-on coding within a Docker environment. My workloads involved designed and delivering weekly instructional labs, leading to an improvement in student understanding
-          Lastly, I gained experience providing real-time feedback and debugging assistance, enhancing students' practical programming skills. 
-          </p>
-        
+        <h3>ZeroConfAI Gateway (2025)</h3>
+        <p>A zero-configuration AI gateway system implementing mDNS service discovery for seamless local network API access. The project features intelligent model routing based on prompt complexity heuristics, automatic cost optimization across multiple AI providers via OpenRouter, and comprehensive usage tracking with SQLite persistence. Built with FastAPI for asynchronous request handling, and thread-safe atomic operations for concurrent access. Technical highlights include proper asyncio lifecycle management, background task processing, and a Python client library with automatic gateway discovery.</p>
+        <p class="mt-2"><strong>Technologies:</strong> Python, FastAPI, Zeroconf/mDNS, SQLite, AsyncIO, HTTPX, OpenRouter API</p>
+        <a href="https://github.com/jperrello/zeroconfai" target="_blank" class="text-blue-600 hover:underline">View Project</a>
       </div>
+
       <div class="project-card">
-        <h3>Moderation and Misinformation on Social Media</h3>
-        <p>Research project developed in November/December 2024. Focused on detecting unfair promotion of political ideologies over others on Reddit, Twitter, and Threads. Also investigated the effectiveness of fact-checking and how toxicity is promoted online. Project is undergoing new development, but feel free to view our original academic paper below.</p>
-        <a href="https://drive.google.com/file/d/1mevR1MN72UcHVMBmSqdMGuTbEDixRjOo/view?usp=sharing" target="_blank" class="text-blue-600 hover:underline">View Project</a>
+        <h3>Auto-Student: Academic Assignment Automation System (2025)</h3>
+        <p>A comprehensive academic workflow automation tool integrating Canvas LMS API, OpenAI completions, and content extraction pipelines. The system implements asynchronous file downloading with proper session management, YouTube transcript extraction via youtube-transcript-api, and HTML content parsing with BeautifulSoup4. Features include intelligent text summarization to manage context windows, multi-format file processing (HTML, JSON, CSV, text), and a Streamlit-based GUI with real-time progress tracking. Architecture employs proper async/await patterns, thread-safe operation scheduling, and dataclass-based state management. The codebase demonstrates production-grade error handling, activity callbacks for UI updates, and clean separation between business logic and presentation layers.</p>
+        <p class="mt-2"><strong>Technologies:</strong> Python, AsyncIO, Canvas API, OpenAI API, Streamlit, BeautifulSoup4, AIOHTTP, CustomTkinter</p>
+        <p class="mt-2 text-yellow-400"><strong>Note:</strong> Developed as an exploration of educational technology automation. Users should be mindful of academic integrity policies.</p>
+        <a href="https://github.com/jperrello/auto-student" target="_blank" class="text-blue-600 hover:underline">View Project</a>
       </div>
+
       <div class="project-card">
-        <h3>Jake</h3>
-        <p>Class Project developed in September-December 2023. Gained experience in frontend and backend web development. Project focused on rebuilding and improving Stanislaus State's website for finding relevant academic research papers.</p>
+        <h3>Moderation and Misinformation on Social Media (2024)</h3>
+        <p>Research project investigating algorithmic bias and misinformation propagation across Reddit, Twitter, and Threads. Analyzed platform-specific content moderation approaches and measured the effectiveness of fact-checking mechanisms in reducing toxic content spread. Employed quantitative methods to detect unfair promotion of political ideologies and examined how platform design influences toxicity amplification. Project utilized data collection pipelines, statistical analysis, and machine learning techniques to identify patterns in content recommendation systems.</p>
+        <p class="mt-2"><strong>Technologies:</strong> Python, Data Analysis, Social Media APIs, Statistical Modeling</p>
+        <a href="https://drive.google.com/file/d/1mevR1MN72UcHVMBmSqdMGuTbEDixRjOo/view?usp=sharing" target="_blank" class="text-blue-600 hover:underline">View Academic Paper</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Teaching Assistant - Database Systems CSE180 (2024-Present)</h3>
+        <p>Educating undergraduates in SQL fundamentals with hands-on Docker environment training. Design and deliver weekly instructional labs covering relational database design, query optimization, transaction management, and normalization theory. Provide real-time debugging assistance and code review, improving student proficiency in database programming. Developed lab materials focusing on practical applications of database theory, including indexing strategies and query performance analysis.</p>
+        <p class="mt-2"><strong>Topics Covered:</strong> SQL, Relational Algebra, Database Design, Query Optimization, Docker, Transaction Processing</p>
+      </div>
+
+      <div class="project-card">
+        <h3>JAKE - Academic Research Portal (2023)</h3>
+        <p>Full-stack web application developed to modernize Stanislaus State's academic research discovery system. Implemented improved search algorithms to reduce irrelevant results, designed a user-friendly interface for research article tracking, and built backend systems for efficient metadata storage and retrieval. Project addressed real pain points in university research workflows through user research and iterative design. Gained experience in both frontend UI/UX design and backend API development.</p>
+        <p class="mt-2"><strong>Technologies:</strong> Full-stack web development, Search optimization, REST APIs</p>
         <a href="https://github.com/elliott2232/CS4800-JAKE" target="_blank" class="text-blue-600 hover:underline">View Project</a>
       </div>
+
       <div class="project-card">
-        <h3>School Counselor Chatbot</h3>
-        <p>StanHack Hackathon Project in 2024, developed in two days. AI Chatbot designed to offer advising to students signing up for classes. Gained experience in AI and 3D Modelling.</p>
+        <h3>School Counselor Chatbot (2024)</h3>
+        <p>Two-day hackathon project (StanHack 2024) building an AI-powered academic advising chatbot. Integrated natural language processing for student queries about course selection, prerequisites, and degree requirements. Implemented 3D avatar modeling for enhanced user engagement and developed conversational AI flows to guide students through academic planning decisions. Project demonstrated rapid prototyping skills and creative application of AI technologies in educational contexts.</p>
+        <p class="mt-2"><strong>Technologies:</strong> AI/NLP, 3D Modeling, Chatbot Development, Rapid Prototyping</p>
         <a href="https://github.com/ChristianAlameda/HackStan" target="_blank" class="text-blue-600 hover:underline">View Project</a>
       </div>
+
       <div class="project-card">
         <h3>Personal Website</h3>
-        <p>The source code for the website you are looking at now! Good practice in web design with HTML, CSS, and JavaScript.</p>
+        <p>The source code for the website you are looking at now! Built with semantic HTML5, custom CSS including animations and responsive design, and vanilla JavaScript for interactive elements. Demonstrates clean code organization, accessibility considerations, and modern web design principles.</p>
+        <p class="mt-2"><strong>Technologies:</strong> HTML5, CSS3, JavaScript</p>
         <a href="https://github.com/jperrello/Personal-Website" target="_blank" class="text-blue-600 hover:underline">View Project</a>
       </div>
     </section>
 
-       <!-- About Section -->
-       <section id="about" class="my-10">
-        <h2 class="section-title text-3xl">About Me</h2>
-        
-        <p class="text-lg">I have always been eager to step out of the comfort zone that the Central Valley has provided me. The question of what more could be waiting for me in the outside world was answered in the summer of 2023 when I applied and was granted the opportunity to work for a small startup in London named Filisia. Nervous and eager to learn, I stepped on the plane to travel to a foreign land to see what awaited me. </p>
-        <p class="text-lg">While working at my 2023 internship at Filisia, I learned that the team was developing an app to educate academically challenged children across London. I was tasked with redesigning the team’s backend data system, which lacked the ability to adequately visualize children’s progress in response times and their academic advancement. Before this point, I had completed research in network analysis with Python on large datasets for Google’s ExploreCSR program. My work with educational software at Fisilia piqued my interest in data processing as a means to optimize core functionality of web services, such as data visualization or recommendation systems. However, working with a dedicated team of engineers forty hours a week opened my eyes to a whole new world of software engineering. By the end of my time with the Filisia team, I had created an entire interactive visualization system to help future employees and users track the progression of young children. </p>
-        <p class="text-lg">My passion for computer science and my belief in its ability to solve complex problems grew and deepened when, after returning home, I worked with two classmates on a semester-long project creating a web service to facilitate academic research for college students. Our team sought to optimize outdated navigational tools. Accordingly, we developed a system for keeping track of research articles and reducing irrelevant search results, effecting a more streamlined research experience for college students. This, along with my work on advancing technology to help young, academically challenged children in England, has inspired me to push the boundaries of my personal knowledge of software engineering and Computer Science.</p>
-        <p class="text-lg">The aforementioned experiences have helped bring my career goals into sharper focus. Now, I am a full time master's student at UCSC, studying censorship and cybersecurity. Simultaneously, I am a TA for an upper division CSE course entitled Database Systems. I am eager to finish my master's degree and contribute academic research to the field of Computer Science.</p>
-      </section>
+    <!-- About Section -->
+    <section id="about" class="my-10">
+      <h2 class="section-title text-3xl">About Me</h2>
+      
+      <p class="text-lg">I have always been eager to step out of the comfort zone that the Central Valley has provided me. The question of what more could be waiting for me in the outside world was answered in the summer of 2023 when I applied and was granted the opportunity to work for a small startup in London named Filisia. Nervous and eager to learn, I stepped on the plane to travel to a foreign land to see what awaited me.</p>
+      
+      <p class="text-lg">While working at my 2023 internship at Filisia, I learned that the team was developing an app to educate academically challenged children across London. I was tasked with redesigning the team's backend data system, which lacked the ability to adequately visualize children's progress in response times and their academic advancement. Before this point, I had completed research in network analysis with Python on large datasets for Google's ExploreCSR program. My work with educational software at Filisia piqued my interest in data processing as a means to optimize core functionality of web services, such as data visualization or recommendation systems. However, working with a dedicated team of engineers forty hours a week opened my eyes to a whole new world of software engineering. By the end of my time with the Filisia team, I had created an entire interactive visualization system to help future employees and users track the progression of young children.</p>
+      
+      <p class="text-lg">My passion for computer science and my belief in its ability to solve complex problems grew and deepened when, after returning home, I worked with two classmates on a semester-long project creating a web service to facilitate academic research for college students. Our team sought to optimize outdated navigational tools by developing a system for keeping track of research articles and reducing irrelevant search results, creating a more streamlined research experience for college students. This, along with my work on advancing technology to help young, academically challenged children in England, has inspired me to push the boundaries of my personal knowledge of software engineering and computer science.</p>
+      
+      <p class="text-lg">These experiences have helped bring my career goals into sharper focus. Currently, I am a full-time master's student at UC Santa Cruz, studying censorship and cybersecurity while simultaneously working as a teaching assistant for CSE 180: Database Systems. My research interests are Zeroconf techonology, mDNS, and LLMS. I also am currently learning Game Design and search optimization.</p>
+    </section>
   
-
     <!-- Contact Section -->
     <section id="contact" class="my-10 text-center">
       <h2 class="section-title text-3xl">Contact</h2>
@@ -99,7 +123,7 @@
           </svg>
         </a>
         <!-- Gmail -->
-        <a href="mailto:jperrello8@gmail.com"  target="_blank" class="hover:text-red-500">
+        <a href="mailto:jperrello8@gmail.com" target="_blank" class="hover:text-red-500">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
             <path d="M12 12.713l-11.86-7.713h23.721l-11.861 7.713zm0 2.06l11.861-7.713v13.293h-23.721v-13.293l11.86 7.713zm11.951-9.889h-23.902c-.049 0-.097.007-.146.011l12.099 7.858 12.099-7.858c-.049-.004-.098-.011-.15-.011z"/>
           </svg>
